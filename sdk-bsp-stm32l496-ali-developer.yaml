@@ -1,0 +1,102 @@
+board:
+  buy_url_cn: http://www.notioni.com
+  buy_url_global: http://www.notioni.com
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: Developer Kit STM32L496 is a development board based on ARM Cortex-M4
+    kernel launched by Ali and Notioni. The highest main frequency is 80MHz. The development
+    board has rich onboard resources, which can give full play to the chip performance
+    of STM32L496.
+  description_zh: Developer Kit STM32L496 是阿里联合诺行推出的一款基于 ARM Cortex-M4 内核的开发板，最高主频为
+    80Mhz，该开发板具有丰富的板载资源，可以充分发挥 STM32L496 的芯片性能。
+  emulator_machine: ''
+  large_image: documents/images/board.png
+  name: STM32L496-NOTIONI-ALI-DEVELOPER
+  price_cn: 340 CNY
+  price_global: 56 USD
+  sale_contact_cn: http://www.notioni.com/#/contact
+  sale_contact_global: http://www.notioni.com/#/contact
+  small_image: documents/images/small.png
+  vendor: NOTIONI
+  version: 1.0.0
+chip:
+  chip_name: STM32L496VGT6
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32L4
+  source_freq: '8000000'
+  sub_series_name: STM32L496
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/AliOS Things Developer Kit用户操作指导_V1.0--20180611.pdf
+  title: AliOS Things Developer Kit User Manual
+- category: sheet
+  file: documents/DS11585.pdf
+  title: Datasheet
+example_projects: []
+features:
+- Light environmental sensor, Six-axis sensor, magnetometer, Pressure, temperature
+  and humidity sensors
+- Buttons
+- High performance audio decoder chip
+- TFT LCD
+- WiFi module (BK7231)
+- Onboard ST Link V2.1 functionality
+features_zh:
+- 光环境传感器，六轴传感器，磁力计，压力，温湿度传感器
+- 按键
+- 高性能音频解码芯片
+- TFT 显示屏
+- WIFI 模块（BK7231）
+- 板载 ST LINK V2.1 功能
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: stm32l496-ali-dev
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
